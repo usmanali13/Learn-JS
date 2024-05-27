@@ -10,7 +10,7 @@ console.log(typeof (runs)); //check the data type
 //datatype first letter is capital
 let valueInRuns = Number(runs) //convert string into Number
 console.log(typeof (valueInRuns)); // again chech the type
-//this can conert string 40 into number 
+//this can convert string 40 into number 
 
 
 //but if value is 40abc3
