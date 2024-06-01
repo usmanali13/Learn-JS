@@ -44,5 +44,5 @@ let gameCounter = 100
 gameCounter++; //postfix
 console.log(gameCounter); //output is 101
 
-gameCounter++; //prefix
+++gameCounter; //prefix
 console.log(gameCounter); //output is 101
