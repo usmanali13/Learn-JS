@@ -17,6 +17,7 @@ when declare with literals , singleton is not created.
 const mySym = Symbol("key1") //declare symbol
 //to create object
 
+//these are object literals
 
 const Jsuser = {
     name: "usman",
