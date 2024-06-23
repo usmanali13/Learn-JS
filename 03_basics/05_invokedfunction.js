@@ -8,8 +8,12 @@
 (function chai(){ //this is named iife because it has name chai
     console.log('DB connected');
 })(); //use semicolon to stop 
+
+//()()
 //first paranthesis () for function defintion and second () for execution
+
 //two iify ko 1 sath likhny k liy semicolon use
+
 //arrow function
 ( () => { //this is unnamed iife because it has no name chai
     console.log('db conneted too');
