@@ -1,0 +1,56 @@
+<!-- video 31 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading">DOM learning with usman<h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+                        "Document Object Model"
+
+
+                                  Window
+                                    |
+                                Document
+                                    |
+                                   Html
+                        /                       \
+                    Head                        body
+                    /    \                        |
+                 title    meta tag                div -> attribute
+                 /          /                     /             \
+             text node   attribute             h1                 p
+                                            /      \               /
+                                        attribute   text         text node
+                                                    node
+
+
+
+console.log(document)
+>document // to see attributes of document in console
+
+console.log(document.baseURL)  //etc
+
+//to access web page
+console.log(document.links)  //to get all links
+console.log(document.lonks[2])
+
+//html is collection , not bydefault array .
+
+//DOM manipulation
+
+document.getelementbyid("firstheading")
+or
+document.getelementbyId("firstheading").innerHTML = "<h1>Usman Ali</h1>"
+
+-->
