@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM</title>
+
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <div class="bg-black">
+        
+        <h1 id="title" class="heading">DOM learning</h1>
+
+        <h2>Lorem, ipsum.</h2>
+
+        <h2>Lorem ipsum dolor sit amet consectetur.
+        </h2>
+
+        
+        <h1 class="heading" >DOM learning <span style="display: none;">hello usman</span></h1>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <input type="password" name="" id="">
+
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+
+    </div>
+
+<!-- 
+    
+//get attribute
+
+1.  document.getElementById("title") 
+    //output
+    <h1 id="title" class="heding">DOM learning</h1>
+
+2.   document.getElementById("title").id
+    //output
+    'title'
+
+3.   document.getElementById("title").className
+    //output
+    'heading'
+
+
+4.    document.getElementById("title").getAttribute
+        //output
+        ƒ getAttribute() { [native code] }      //it is function so ask  what attribute you want
+
+      document.getElementById("title").getAttribute("id")
+      //output is "title"
+      document.getElementById("title").getAttribute("class")
+      //output is "heading"
+
+//store value in variable
+
+    const title = document.getElementById("title")
+    //print title
+    //output
+        <h1 id="title" class="heding">DOM learning</h1>
+    //now
+    ->title.style.backgroundColor = "green"
+    ->title.style.padding = "24px"
+    ->title.style.borderRadius = "20px"
+
+//set attribute
+
+    document.getElementById("title").setAttribute("class", "test") //to  set heading is test
+   
+
+//intersting how to get content
+
+    -> title
+
+        <h1 class="heading" >DOM learning <span style="display: none;">hello usman</span></h1>
+
+    ->title.textContent //display all text that are visible or not
+    //DOM learning  hello usman
+
+    ->title.innerText   //display only those text that are visible
+    //DOM learning 
+
+    ->title.innerHTML  //give all html code with text
+    //DOM learning <span style="display: none;">hello usman</span>
+
+
+
+//query selectors , it gives one value
+
+    documnet.querySelector("h1")  //it gives first h1 of page
+    "<h1 id="title" class="heading">DOM learning</h1>"
+
+    document.querySelector("#title")  //serach with id
+
+    document.querySelector(".heading") //search with class
+
+    document.querySelector("input")  //select input elements in all page
+
+    document.querySelector('input[type = "password"]')  //select input attribute,select password field
+
+    document.querySelector('p:first-child')  //select paragraph in any div that is first child
+
+//How to select individual element
+
+
+    html code   <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                </ul>
+
+                 
+    suppose we want to change first item color so
+
+    document.querySelector('ul')  //select unordered list
+
+    const myul = document.querySelector('ul') //store in any variable
+
+    myul.querySelector('li')   //to select first list item "one"
+
+    const turnGreen = myul.querySelector('li')  //store in turnGreen variable
+
+    turnGreen.style.backgroundColor = "green"   //to give background color to first li
+
+    turnGreen.innerText     //output is one , to get inner text
+
+    turngreen.innerText = 'Six'     //to change innerText one into Six
+
+
+//to select other or all values
+
+    document.querySelectorAll('li')  //select all li's
+
+    const tempLilist = document.querySelectorAll('li') //store in variable
+
+    tempLilist //to print templist  that give us node list not array
+
+    tempLilist.style.color = "green"  //this is not work , not change the color
+
+    tempLilist[2].style.color = "green" //this is work , this can change color of second value,you can change this [0 or 1 or 2]
+
+    //another example
+
+    const myh1 = document.querySelectorAll("h1")  //select h1 and store in variable
+
+    myh1 //print it also give node list
+
+    myh1[0].style.color = "red" //change h1 [0] heading color into red
+
+    //use foreach  to change the bg color
+
+    tempLilist.forEach( function (l) {
+    l.style.backgroundColor = "blue"
+        } )
+
+
+//document.getElementsByClassName("list-item")
+
+        //it cannot use foreach loop, first we convert this html collection into map
+
+        const tempClassList = document.getElementsByClassName("list-item")
+
+        Array.from(tempClassList) //now this is an array,now we can use map and push.
+
+        //use foreach
+            
+        myConvertedArray = Array.from(tempClassList)  //store in variable
+
+        myConvertedArray.forEach(function(li){
+                li.style.color = 'yellow';
+                backgroundColor = "red";
+                li.innerText = "Usman"  //change  text with usman
+        })
+
+
+
+    -->
+</body>
+</html>
