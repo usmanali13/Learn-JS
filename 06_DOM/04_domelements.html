@@ -1,0 +1,49 @@
+<!-- video 33 -->
+ <!-- we see how to create node list programmatically -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body style="background-color: brown; color: white;">
+    
+ </body>
+ <script>
+    //create div element
+    const div = document.createElement('div')  //create any element div or h1 etc
+    console.log(div);
+
+    //now add properties in div
+    div.className = "main" //give class name
+
+    div.id = "myid"  //give id
+
+    div.id = Math.random() * 10 +1 //generate random id just for fun
+    div.id = Math.round(Math.random() * 10 +1)  //to round off values
+
+    //select another attributes
+    div.setAttribute("Title" , "My Title Usman")
+
+    //add styling
+    div.style.backgroundColor = "blue"
+    div.style.padding = "12px"
+    div.innerText = "Usman Ali"   //to add text
+
+    //OR  to add text
+    const addtext = document.createTextNode(" Usman") 
+
+    //now this node add into div
+    div.appendChild(addtext)
+    
+    //this div in memory not on page, to attch div to page
+    document.body.appendChild(div)
+
+    //we learn document traverse , select and generate
+    //then div wrap into a function , give argumrnts which value or text you pass , run loop etc.
+
+
+ </script>
+ </html>
